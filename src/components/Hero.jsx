@@ -7,20 +7,20 @@ import heroimg3 from "../assets/heroimg3.jpg";
 const slides = [
   {
     image: heroimg1,
-    title: "Welcome to Grandora Events",
+    title: "WELCOME TO GRANDORA EVENTS",
     subtitle: "We design timeless experiences for every occasion.",
     buttonText: "Book a Consultation",
   },
   {
     image: heroimg2,
-    title: "Turning Dreams into Reality",
-    subtitle: "From concept to execution — we handle it all beautifully.",
+    title: "TURNING DREAMS INTO REALITY",
+    subtitle: "From concept to execution, we handle it all beautifully.",
     buttonText: "Let’s Get Started",
   },
   {
     image: heroimg3,
-    title: "Elegant. Memorable. Effortless.",
-    subtitle: "Every detail matters — trust Grandora to get it right.",
+    title: "ELEGANT. MEMORABLE. EFFORTLESS.",
+    subtitle: "Every detail matters, trust Grandora to get it right.",
     buttonText: "Plan Your Event",
   },
 ];
@@ -54,7 +54,7 @@ export default function Hero() {
           {/* White overlay box */}
           <div className="absolute inset-0 flex items-end bg-black/30">
             <div className="bg-white backdrop-blur-sm text-center p-8 max-w-lg shadow-lg lg:ml-10 lg:mb-10">
-              <h1 className="text-3xl font-playfair mb-3">
+              <h1 className="text-xl font-playfair mb-3">
                 {slide.title}
               </h1>
               <p className="text-gray-600 mb-6">{slide.subtitle}</p>

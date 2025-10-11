@@ -71,6 +71,60 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ---------- How We Work Section ---------- */}
+        <section
+          className="relative bg-fixed bg-center bg-cover py-20 px-6 my-20"
+          style={{
+            backgroundImage: `url(${decor})`,
+          }}
+        >
+          {/* Dark overlay to make content more readable */}
+          <div className="absolute inset-0 bg-black/50"></div>
+
+          {/* Content container */}
+          <div className="relative max-w-6xl mx-auto text-center text-white">
+            <h2 className="text-2xl font-playfair mb-12 text-white text-left">HOW WE WORK</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white/90 text-gray-800 p-6 shadow-lg backdrop-blur-sm">
+                <h3 className="mb-3">1. CONSULTATION</h3>
+                <p>
+                  We start by understanding your vision, budget, and goals to bring your dream event to life.
+                </p>
+              </div>
+
+              <div className="bg-white/90 text-gray-800 p-6 shadow-lg backdrop-blur-sm">
+                <h3 className="mb-3">2. PLANNING</h3>
+                <p>
+                  Our team handles every detail, from logistics to vendor coordination; for a stress-free experience.
+                </p>
+              </div>
+
+              <div className="bg-white/90 text-gray-800 p-6 shadow-lg backdrop-blur-sm">
+                <h3 className="mb-3">3. EXECUTION</h3>
+                <p>
+                  On the day, we ensure everything runs smoothly so you can focus on enjoying your special moment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ---------- Book a Consultation Section ---------- */}
+        <section className="bg-white py-10 px-6 text-center">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-2xl font-playfair mb-4">LET'S BRING YOUR VISION TO LIFE</h2>
+            <p className="text-gray-600 mb-8">
+              Whether it’s a wedding, corporate event, or private celebration, Grandora Events is ready to make it unforgettable.
+            </p>
+            <button
+              onClick={() => window.location.href = '/contact'}
+              className="bg-black shadow text-white px-8 py-3 text-lg font-medium hover:bg-white hover:text-black hover:border transition duration-300"
+            >
+              Book a Consultation
+            </button>
+          </div>
+        </section>
         
         <Footer />
     </div>
