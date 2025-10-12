@@ -49,6 +49,10 @@ export default function Navbar() {
         </nav>
 
         <div className="mt-auto">
+          <div className="mb-4 text-center">
+          <h3>+233 54 599 1504</h3>
+          <h3>grandoraeventsgh@gmail.com</h3>
+          </div>
           <div className="flex items-center justify-center gap-4">
             <button className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300">
                 <Instagram className="w-5 h-5" />
@@ -146,6 +150,11 @@ export default function Navbar() {
               );
             })}
           </nav>
+
+          <div className="my-10 text-center">
+          <h3>+233 54 599 1504</h3>
+          <h3>grandoraeventsgh@gmail.com</h3>
+          </div>
 
           <div className="mt-6 flex justify-center">
             <div className="flex gap-4">

@@ -6,6 +6,7 @@ import decor from "../assets/decor.webp";
 import weddings from "../assets/weddings.jpg";
 import corporateevents from "../assets/corporateevents.jpg";
 import socialevents from "../assets/socialevents.jpg";
+import flowerbg from "../assets/flowerbg.jpg";
 
 const Services = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -62,111 +63,130 @@ const Services = () => {
   ];
 
   return (
-    <div className="">
-      {/* WHAT WE OFFER SECTION */}
-      <section className="mb-20 px-6 pt-24">
-        <h2 className="text-2xl font-playfair text-left mb-10">
-          WHAT WE OFFER
-        </h2>
+  <div>
+    <div
+      className="relative overflow-hidden"
+      style={{
+        backgroundImage: `url(${flowerbg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Gradient Overlay — now behind the content */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/90 to-white z-0"></div>
 
-        {/* Desktop View */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="bg-white shadow-lg overflow-hidden">
-              <div
-                className="h-56 bg-cover bg-center relative"
-                style={{ backgroundImage: `url(${service.image})` }}
-              ></div>
-              <div className="p-4">
-                <h3> {service.title} </h3>
-                <p className="text-gray-700 text-sm mt-2">
-                  {service.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* Content Wrapper — ensures content is above the gradient */}
+      <div className="relative z-10">
+        {/* WHAT WE OFFER SECTION */}
+        <section className="mb-20 px-6 pt-24">
+          <h2 className="text-2xl font-playfair text-left mb-10">
+            WHAT WE OFFER
+          </h2>
 
-        {/* Mobile Accordion View */}
-        <div className="md:hidden">
-          {services.map((service, index) => (
-            <div key={index} className="mb-4 border overflow-hidden">
-              <button
-                className="flex justify-between items-center w-full p-4 bg-gray-100"
-                onClick={() => toggleAccordion(index, "service")}
-              >
-                <span className="font-semibold text-gray-800">
-                  {service.title}
-                </span>
-                <span>{openIndex === index ? "−" : "+"}</span>
-              </button>
-              {openIndex === index && (
-                <div className="p-4 bg-white">
-                  <div
-                    className="h-40 bg-cover bg-center mb-3 rounded-md"
-                    style={{ backgroundImage: `url(${service.image})` }}
-                  ></div>
-                  <p className="text-gray-700 text-sm">{service.description}</p>
+          {/* Desktop View */}
+          <div className="hidden md:grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div key={index} className="bg-white shadow-lg overflow-hidden">
+                <div
+                  className="h-56 bg-cover bg-center relative"
+                  style={{ backgroundImage: `url(${service.image})` }}
+                ></div>
+                <div className="p-4">
+                  <h3>{service.title}</h3>
+                  <p className="text-gray-700 text-sm mt-2">
+                    {service.description}
+                  </p>
                 </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* EVENT TYPES SECTION */}
-      <section className="mb-20 px-6 py-16">
-        <h2 className="text-2xl font-playfair text-left mb-10">
-          TYPES OF EVENTS
-        </h2>
-
-        {/* Desktop View */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8">
-          {eventTypes.map((event, index) => (
-            <div key={index} className="bg-white shadow-lg overflow-hidden">
-              <div
-                className="h-56 bg-cover bg-center relative"
-                style={{ backgroundImage: `url(${event.image})` }}
-              ></div>
-              <div className="p-4">
-                <h3>{event.title}</h3>
-                <p className="text-gray-700 text-sm mt-2">
-                  {event.description}
-                </p>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Mobile Accordion View */}
-        <div className="md:hidden">
-          {eventTypes.map((event, index) => (
-            <div key={index} className="mb-4 border overflow-hidden">
-              <button
-                className="flex justify-between items-center w-full p-4 bg-gray-100"
-                onClick={() => toggleAccordion(index, "event")}
-              >
-                <span className="font-semibold text-gray-800">
-                  {event.title}
-                </span>
-                <span>{openEventIndex === index ? "−" : "+"}</span>
-              </button>
-              {openEventIndex === index && (
-                <div className="p-4 bg-white">
-                  <div
-                    className="h-40 bg-cover bg-center mb-3 rounded-md"
-                    style={{ backgroundImage: `url(${event.image})` }}
-                  ></div>
-                  <p className="text-gray-700 text-sm">{event.description}</p>
+          {/* Mobile Accordion View */}
+          <div className="md:hidden">
+            {services.map((service, index) => (
+              <div key={index} className="mb-4 border overflow-hidden">
+                <button
+                  className="flex justify-between items-center w-full p-4 bg-gray-100"
+                  onClick={() => toggleAccordion(index, "service")}
+                >
+                  <span className="font-semibold text-gray-800">
+                    {service.title}
+                  </span>
+                  <span>{openIndex === index ? "−" : "+"}</span>
+                </button>
+                {openIndex === index && (
+                  <div className="p-4 bg-white">
+                    <div
+                      className="h-40 bg-cover bg-center mb-3 rounded-md"
+                      style={{ backgroundImage: `url(${service.image})` }}
+                    ></div>
+                    <p className="text-gray-700 text-sm">
+                      {service.description}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* EVENT TYPES SECTION */}
+        <section className="mb-20 px-6 py-16">
+          <h2 className="text-2xl font-playfair text-left mb-10">
+            TYPES OF EVENTS
+          </h2>
+
+          {/* Desktop View */}
+          <div className="hidden md:grid md:grid-cols-3 gap-8">
+            {eventTypes.map((event, index) => (
+              <div key={index} className="bg-white shadow-lg overflow-hidden">
+                <div
+                  className="h-56 bg-cover bg-center relative"
+                  style={{ backgroundImage: `url(${event.image})` }}
+                ></div>
+                <div className="p-4">
+                  <h3>{event.title}</h3>
+                  <p className="text-gray-700 text-sm mt-2">
+                    {event.description}
+                  </p>
                 </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
-      <Footer />
+              </div>
+            ))}
+          </div>
+
+          {/* Mobile Accordion View */}
+          <div className="md:hidden">
+            {eventTypes.map((event, index) => (
+              <div key={index} className="mb-4 border overflow-hidden">
+                <button
+                  className="flex justify-between items-center w-full p-4 bg-gray-100"
+                  onClick={() => toggleAccordion(index, "event")}
+                >
+                  <span className="font-semibold text-gray-800">
+                    {event.title}
+                  </span>
+                  <span>{openEventIndex === index ? "−" : "+"}</span>
+                </button>
+                {openEventIndex === index && (
+                  <div className="p-4 bg-white">
+                    <div
+                      className="h-40 bg-cover bg-center mb-3 rounded-md"
+                      style={{ backgroundImage: `url(${event.image})` }}
+                    ></div>
+                    <p className="text-gray-700 text-sm">
+                      {event.description}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
-  );
+    <Footer />
+  </div>
+);
 };
 
 export default Services;
