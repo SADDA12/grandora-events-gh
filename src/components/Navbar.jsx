@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Instagram, Facebook, Music2 } from "lucide-react";
+import logo2 from "../assets/logo2.png";
+import logo1 from "../assets/logo1.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -19,13 +21,8 @@ export default function Navbar() {
     <>
       {/* ---------- Desktop sidebar (left) ---------- */}
       <aside className="hidden lg:flex lg:flex-col lg:w-64 lg:h-screen lg:fixed lg:top-0 lg:left-0 lg:bg-white lg:py-8 lg:px-6 lg:border-r lg:border-gray-100">
-        <div className="mb-8 text-center">
-          <h1 className="text-2xl font-playfair text-gold tracking-wide">
-            Grandora
-          </h1>
-          <h1 className="text-2xl font-playfair text-gold tracking-wide">
-            Events
-          </h1>
+        <div className="text-center">
+          <img src={logo2} alt="Grandora Events Logo" className="object-contain my-2 w-40"/>
         </div>
 
         {/* Centered nav links */}
@@ -49,9 +46,9 @@ export default function Navbar() {
         </nav>
 
         <div className="mt-auto">
-          <div className="mb-4 text-center">
-          <h3>+233 54 599 1504</h3>
-          <h3>grandoraeventsgh@gmail.com</h3>
+          <div className="mb-4 text-center text-sm">
+          <p>+233 54 599 1504</p>
+          <p>grandoraeventsgh@gmail.com</p>
           </div>
           <div className="flex items-center justify-center gap-4">
             <button className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300">
@@ -79,12 +76,7 @@ export default function Navbar() {
           </button>
 
           <div className="text-lg font-playfair text-gold text-center">
-            <h1 className="text-2xl font-playfair text-gold tracking-wide">
-            Grandora
-          </h1>
-          <h1 className="text-2xl font-playfair text-gold tracking-wide">
-            Events
-          </h1>
+            <img src={logo1} alt="Grandora Events Logo" className="object-contain my-2 w-16"/>
           </div>
 
           <div className="w-8" />
@@ -114,12 +106,7 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between mb-6">
             <div className="text-2xl font-playfair text-gold text-center">
-              <h1 className="tracking-wide">
-                Grandora
-              </h1>
-              <h1 className="tracking-wide">
-                Events
-              </h1>
+              <img src={logo2} alt="Grandora Events Logo" className="object-contain my-2"/>
             </div>
             <button
               onClick={() => setOpen(false)}
@@ -152,8 +139,8 @@ export default function Navbar() {
           </nav>
 
           <div className="my-10 text-center">
-          <h3>+233 54 599 1504</h3>
-          <h3>grandoraeventsgh@gmail.com</h3>
+          <p>+233 54 599 1504</p>
+          <p>grandoraeventsgh@gmail.com</p>
           </div>
 
           <div className="mt-6 flex justify-center">

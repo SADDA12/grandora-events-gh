@@ -1,3 +1,5 @@
+import logo2 from "../assets/logo2.png";
+
 // src/components/Footer.jsx
 export default function Footer() {
   return (
@@ -6,8 +8,7 @@ export default function Footer() {
 
         {/* Brand Section */}
         <div className="text-left">
-          <h2 className="text-2xl font-playfair text-gold">Grandora</h2>
-          <h2 className="text-2xl font-playfair text-gold mb-2">Events</h2>
+          <img src={logo2} alt="Grandora Events Logo" className=" object-contain w-40"/>
           <p className=" text-gray-400">
             Turning moments into grand memories.
           </p>
