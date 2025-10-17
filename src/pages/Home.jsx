@@ -14,8 +14,7 @@ export default function Home() {
         <section className="py-10 bg-gray-50 w-full">
           <div className="max-w-6xl mx-auto px-6">
             <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-              We specialize in planning, coordination and decor, bring style, class and professionalism to weddings, corporate functions,
-              and social celebrations.
+              At Grandora Events, we specialize in planning, coordination, and décor, bringing style, class, and professionalism to weddings, corporate functions, and social celebrations alike
             </p>
             <a
               href="/about"
@@ -103,7 +102,7 @@ export default function Home() {
               <div className="bg-white/90 text-gray-800 p-6 shadow-lg backdrop-blur-sm">
                 <h3 className="mb-3">3. EXECUTION</h3>
                 <p>
-                  On the day, we ensure everything runs smoothly so you can focus on enjoying your special moment.
+                  On the big day, we ensure everything runs smoothly so you can focus on enjoying your special moment.
                 </p>
               </div>
             </div>

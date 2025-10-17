@@ -1,5 +1,6 @@
 // src/App.js
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -16,6 +17,7 @@ function App() {
         {/* The main area; on large screens we offset by the sidebar width (ml-64) */}
         <div className="flex-1 lg:ml-64">
           <main className="min-h-screen overflow-auto pt-16 lg:pt-0">
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/services" element={<Services />} />

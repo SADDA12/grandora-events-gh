@@ -50,17 +50,36 @@ export default function Navbar() {
           <p>+233 54 599 1504</p>
           <p>grandoraeventsgh@gmail.com</p>
           </div>
+                  
           <div className="flex items-center justify-center gap-4">
-            <button className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300">
-                <Instagram className="w-5 h-5" />
-            </button>
-            <button className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300">
-                <Facebook className="w-5 h-5" />
-            </button>
-             <button className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300">
-                <Music2 className="w-5 h-5" />
-            </button>
+            <a
+              href="https://www.instagram.com/grandora_events_gh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+
+            <a
+              href="https://www.facebook.com/grandora_events_gh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@grandora.events.gh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300"
+            >
+              <Music2 className="w-5 h-5" />
+            </a>
           </div>
+
         </div>
       </aside>
 
@@ -144,17 +163,34 @@ export default function Navbar() {
           </div>
 
           <div className="mt-6 flex justify-center">
-            <div className="flex gap-4">
-              <button className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300">
-                <Instagram className="w-5 h-5" />
-            </button>
-            <button className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300">
-                <Facebook className="w-5 h-5" />
-            </button>
-             <button className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300">
-                <Music2 className="w-5 h-5" />
-            </button>
-            </div>
+            <div className="flex items-center justify-center gap-4">
+            <a
+              href="https://www.instagram.com/grandora_events_gh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+
+            <a
+              href="https://www.facebook.com/grandora_events_gh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@grandora.events.gh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300"
+            >
+              <Music2 className="w-5 h-5" />
+            </a>
+          </div>
           </div>
         </div>
       </div>

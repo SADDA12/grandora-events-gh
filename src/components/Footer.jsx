@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Brand Section */}
         <div className="text-left">
           <img src={logo2} alt="Grandora Events Logo" className=" object-contain w-40"/>
-          <p className=" text-gray-400">
+          <p className="text-white">
             Turning moments into grand memories.
           </p>
         </div>
@@ -17,16 +17,16 @@ export default function Footer() {
         {/* Contact Section */}
         <div className="text-left space-y-2"> 
           <h3 className="text-gold">Ring</h3>
-          <p> +233 54 599 1504</p>
+          <p className="text-white"> +233 54 599 1504</p>
             <h3 className="text-gold">Write</h3>
-          <p>grandoraeventsgh@gmail.com</p> 
+          <p className="text-white">grandoraeventsgh@gmail.com</p> 
         </div>
 
               {/* Copyright Line */}
       <div className="text-left text-white">
         <h3 className="text-gold">Location</h3>
-        <h3 className="text-gray-400 py-2">Accra, Ghana</h3>
-        © {new Date().getFullYear()} Grandora Events. All rights reserved.
+        <h3 className="text-white py-2">Accra, Ghana</h3>
+        © {new Date().getFullYear()} Grandora Events Gh. All rights reserved.
       </div>
       </div>
 

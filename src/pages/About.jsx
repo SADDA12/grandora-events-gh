@@ -35,15 +35,10 @@ export default function About() {
               <p className="mb-4">
                 At{" "}
                 <span className="text-gold font-semibold">Grandora Events</span>
-                , we believe every celebration deserves a touch of elegance,
-                detail, and creativity. From weddings to corporate functions, we
-                turn ideas into beautifully executed realities.
+                , we believe every celebration deserves a touch of elegance, detail, and creativity. From weddings and social gatherings to corporate functions, we turn ideas into beautifully executed realities.
               </p>
               <p>
-                Our team combines passion with precision to deliver exceptional
-                experiences for our clients. Whether it’s planning, decor, or
-                full coordination, we handle every element with care so you can
-                focus on enjoying the moment.
+                Our team combines passion with precision to deliver exceptional experiences for our clients. Whether it’s planning, décor, or full coordination, we handle every element with care so you can focus on enjoying the moment.
               </p>
             </div>
           </div>
