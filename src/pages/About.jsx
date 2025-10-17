@@ -17,8 +17,8 @@ export default function About() {
         <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/90 to-white"></div>
 
         {/* Content Container */}
-        <div className="relative z-10 w-full max-w-6xl px-6 py-16 lg:py-24">
-          <h2 className="text-2xl font-playfair mb-10 text-left">ABOUT US</h2>
+        <div className="relative z-10 w-full max-w-6xl px-6 md:pt-24">
+          <h2 className="text-xl md:text-2xl font-playfair mb-10 text-left">ABOUT US</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Left Image (hidden on small screens) */}

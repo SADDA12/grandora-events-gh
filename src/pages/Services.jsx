@@ -79,7 +79,7 @@ const Services = () => {
       <div className="relative z-10">
         {/* WHAT WE OFFER SECTION */}
         <section className="mb-20 px-6 pt-24">
-          <h2 className="text-2xl font-playfair text-left mb-10">
+          <h2 className="text-xl md:text-2xl font-playfair text-left mb-10">
             WHAT WE OFFER
           </h2>
 

@@ -94,8 +94,8 @@ export default function Navbar() {
             <Menu className="w-6 h-6 text-gray-700" />
           </button>
 
-          <div className="text-lg font-playfair text-gold text-center">
-            <img src={logo1} alt="Grandora Events Logo" className="object-contain my-2 w-16"/>
+          <div>
+            <img src={logo1} alt="Grandora Events Logo" className="object-contain w-16"/>
           </div>
 
           <div className="w-8" />
@@ -124,7 +124,7 @@ export default function Navbar() {
           }`}
         >
           <div className="flex items-center justify-between mb-6">
-            <div className="text-2xl font-playfair text-gold text-center">
+            <div>
               <img src={logo2} alt="Grandora Events Logo" className="object-contain my-2"/>
             </div>
             <button
@@ -132,7 +132,7 @@ export default function Navbar() {
               aria-label="Close menu"
               className="p-2 rounded-md"
             >
-              <X className="w-6 h-6 text-gray-700" />
+              <X className="w-6 h-6 text-black" />
             </button>
           </div>
 
