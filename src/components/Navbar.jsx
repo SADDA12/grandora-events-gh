@@ -62,7 +62,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://www.facebook.com/grandora_events_gh"
+              href="https://www.facebook.com/share/1JuFbPASuA/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300"
@@ -174,7 +174,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://www.facebook.com/grandora_events_gh"
+              href="https://www.facebook.com/share/1JuFbPASuA/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-gray-200 p-2 hover:bg-black hover:text-white transition duration-300"
